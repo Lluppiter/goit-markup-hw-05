@@ -166,7 +166,7 @@ a {
   border-radius: 2px;
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .link.auth:hover,
@@ -623,7 +623,7 @@ footer {
 /* ModaL */
 
 .backdrop{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -664,6 +664,10 @@ footer {
   transform: translate(50%, -50%);
   width: 11px;
   height: 11px;  
+}
+.close-icon:focus,
+.close-icon:hover {
+  fill: var(--accent-color);
 }
 
 .is-hidden{
